@@ -1,0 +1,1 @@
+This is part of Odin Project foundational course. In this course we are tasked to create a landing page.
