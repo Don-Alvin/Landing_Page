@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+html,*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62.5%;
+}
+
+:root{
+    --dark-bg: #1F2937;
+    --large-text-font: 4.8rem;
+    --body-text-font: 1.8rem;
+    --button-text-font: 1.6rem;
+    --light-grey-bg: #e5e7eb;
+    --large-text-weight: 700;
+    --body-text-weight: 400;
+    --header-height:75px;
+    --logo-font: 3.6rem;
+    --logo-color: #f9faf8;
+    --quote-text-font: 3.6rem;
+    --quote-text-weight: 300;
+    --quote-text-color: #1f2937;
+    --button-color: #3882f6;
+    --button-font-weight: 500;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    padding: 6px;
+    font-size: var(--button-text-font);
+    font-weight: var(--button-font-weight);
+    border: none;
+    border-radius: 4px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    height:var(--header-height);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background: var(--dark-bg);
+}
+
+ul{
+    list-style-type: none;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: auto;
+}
+
+#home {
+    font-size: var(--logo-font);
+}
+
+.nav-link{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-link li a{
+    color: var(--logo-color);
+    font-size: var(--body-text-font);
+    font-weight: var(--body-text-weight);
+}
+
+.nav-link li a:hover{
+    color: orangered;
+    text-decoration: underline;
+    padding: 10px;
+    transition: .4s;
+}
+
+.nav-link li a:active{
+    color: orangered;
+    text-decoration: underline;
+}
+
+.btn-buy{
+    background: var(--button-color);
+    color: var(--logo-color);
+    border: none;
+    border-radius: 4px;
+}
+
+.hero-section{
+    position: relative;
+    top: 63px;
+    background: var(--dark-bg);
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text{ 
+    width: 40%;
+    color: white;
+    font-size: var(--body-text-font);
+    line-height: 2rem;
+    padding: 20px;
+}
+
+.hero-text h1{
+    font-size: var(--large-text-font);
+    line-height: normal;
+}
+
+.hero-img{
+    height: 250px;
+    width: 40%;
+    background-color: var(--logo-color);
+    background-image: url("../assets/images/Dr.Strange.jpg");
+    background-clip: padding-box;
+    background-size: cover;
+    border-radius: 3px;
+}
+
+#ondemand{
+    position: relative;
+    top: 60px;
+    background-color: var(--logo-color);
+}
+
+#ondemand h1{
+    font-size: var(--large-text-font);
+    text-align: center;
+}
+
+.movie{
+    width: 20%;
+    height: 200px;
+    background-color: #1F2937;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    border: 1px solid #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;;
+}
+
+.morbius{
+    background-image: url("../assets/images/morbius.jpeg");
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sonic{
+    background-image: url("../assets/images/sonic.jpeg");
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.batman{
+    background-image: url("../assets/images/batman.jpeg");
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.badguys{
+    background-image: url("../assets/images/badguys.jpeg");
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.dvd{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.get-dvd{
+    background: var(--logo-color);
+    color: var(--dark-bg);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.get-dvd:hover{
+    color:var(--logo-color);
+    background-color: var(--button-color);
+}
+
+.quote{
+    background-color: var(--light-grey-bg);
+    position: relative;
+    top: 60px;
+}
+
+.cite{
+    height: 200px;
+}
+
+.cite p{
+    font-size: 2.4rem;
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+}
+
+footer{
+    position: relative;
+    top: 60px;
+    background-color: var(--dark-bg);
+    height: auto;
+    padding-bottom: 30px;
+}
+
+#newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+#newsletter h2{
+    color: var(--logo-color);
+    font-size: 2.4rem;
+}
+
+#newsletter p{
+    color: var(--logo-color);
+    font-size: 2rem;
+}
+
+#newsletter button{
+    background-color: var(--button-color);
+    color: var(--logo-color);
+    font-size: var(--button-text-font);
+    font-weight: var(--button-font-weight);
+    height: 50px;
+    width: 100px;
+}
+
+#newsletter button:hover{
+    background-color: orangered;
+    width: 120px;
+    transition: .5s;
+}
+
+
+
+
